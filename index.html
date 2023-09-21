@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="Name">Name:</label>
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="Email">E-mail:</label>
+            <input
+              type="text"
+              id="Email"
+              name="Email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="Password">Password:</label>
+            <input
+              type="text"
+              minlength="5"
+              maxlength="15"
+              id="Password"
+              name="Password"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="PhoneNumber">Phone no.:</label>
+            <input
+              type="tel"
+              minlength="10"
+              maxlength="10"
+              id="PhoneNumber"
+              name="PhoneNumber"
+            />
+          </div>
+          <div class="gender-details-box">
+            <span class="gender-details-box">Gender:</span>
+            <div class="gender-category">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" />
+            </div>
+           </div>
+           <div class="user-input-box">
+              <label for="language">Language:</label>
+              <select name="language" class="user-input-box">
+                <option value="">Select language</option>
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+                <option value="urdu">Urdu</option>
+                <option value="chinese">Chinese</option>
+                <option value="french">French</option>
+                <option value="braille">Braille</option>
+                <option value="tamil">Tamil</option>
+                <option value="arabic">Arabic</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="user-input-box">
+              <label for="ZipCode">Zip Code:</label>
+              <input
+                type="tel"
+                minlength="6"
+                maxlength="6"
+                id="ZipCode"
+                name="ZipCode"
+              />
+            </div>
+
+            <div class="user-input-box">
+              <label for="aboutyoursef">About:</label>
+              <textarea
+                name="aboutyourself"
+                id="about"
+                cols="75"
+                rows="10"
+                placeholder="Write about yourself"
+              ></textarea>
+            </div>
+           </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Register" />
+          </div>
+        
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- autorenametag -->

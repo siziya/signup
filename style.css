@@ -1,0 +1,137 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    /* flex-direction: column; */
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.WUb1lxzGQSbkyCmTUSatBAHaE8&pid=Api&P=0&h=180");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 30px;
+}
+.container{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    max-width:650px;
+    background: rgba(0,0,0,0.3);
+    padding: 28px;
+    margin:0 28px;
+    border-radius:5px;
+    box-shadow: inset -2px 2px 2px whitesmoke;
+}
+.form-title{
+    font-size:26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2nd){
+    justify-content:end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 95%;
+    color:white;
+    font-size: 20px;
+    font-weight: 400;
+    margin:5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 2px;
+    outline:none;
+    border:1px solid grey;
+    padding: 0 10px;
+}
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.gender-details-box{
+    color:white;
+    font-size:24px ;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    margin:15px 0;
+    color: white;
+
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor:pointer;
+
+}
+.form-submit-btn input{
+    display:block;
+    width:100%;
+    margin-top: 10px;
+    font-size: 17px;
+    padding:10px;
+    border:none;
+    border-radius: 3px;
+    color:black;
+    background: rgba(100, 600, 250, 0.3);
+}
+.form-submit-btn input:hover{
+    background: rgba(2,100,5,0.5);
+    color:rgb(225,255,255)
+}
+@media(max-width:600px){
+    .container{
+        /* display: flex;
+        flex-direction: column; */
+        min-width:300px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width:100%;
+    }
+    .user-input-box:nth-child(2nd){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display:flex;
+        justify-content :space-between;
+        width:100%;
+    
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width:0;
+    }
+}
